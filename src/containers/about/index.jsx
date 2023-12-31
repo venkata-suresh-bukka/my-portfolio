@@ -38,7 +38,7 @@ const jobSummary =
 
 const About = () => {
   return (
-    <section id="about" className="about" style={{backgroundColor:"rgb(78, 84, 88)"}}>
+    <section id="about" className="about">
       <PageHeaderContent
         headerText="About Me"
         icon={<BsInfoCircleFill size={40} />}
