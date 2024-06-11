@@ -4,6 +4,7 @@ import { HiX } from "react-icons/hi";
 import { Link } from "react-router-dom";
 import Venkat from "../../images/venkat1.png"
 import "./styles.scss";
+import GcpIcon from "../../images/google-cloud-icon.png"
 import AwsIcon from "../../images/aws.png"
 const data = [
   {
@@ -45,6 +46,9 @@ const Navbar = () => {
           <Link to={"/"} className="navbar__container__logo">
             <img alt="dummy data" className="venkat-img" width={70} src={Venkat} />
           </Link>
+          <div className="go-to-gcp-btn-div">
+            <a href="https://myportfolio-n3ry54dzaq-el.a.run.app/" className="go-to-gcp-btn-link">Go to GCP</a>
+          </div>
           <div className="cloud-env">
             <img alt="dummy data" className="gcp-icon" width={50} height={40} src={AwsIcon} />
             <p className="cloud-env-name">I'm from AWS Env</p>
