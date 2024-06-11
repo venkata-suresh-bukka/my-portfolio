@@ -1,5 +1,6 @@
 .navbar{
-    background-color: #9c753b;
+    // background-color: #0f2e69;
+    background-color: #865706;
     height: 84px;
     display: flex;
     justify-content: center;
@@ -91,7 +92,8 @@
     }
 }
 .navbar__container__logo{
-    background-color: rgb(215, 153, 67);
+    // background-color: rgb(153, 187, 218);
+    background-color: rgba(232, 138, 23, 0.906);
     border-radius: 50px;
 }
 .venkat-img{
@@ -114,3 +116,19 @@
 .gcp-icon{
     height: 50px;
 }
+.go-to-gcp-btn-div{
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 14px;
+    background-color: rgb(176, 176, 234);
+    border-radius: 10px;
+  }
+  .go-to-gcp-btn-link{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(37, 34, 34);
+  }
