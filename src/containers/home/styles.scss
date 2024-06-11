@@ -1,3 +1,4 @@
+
 .home {
   position: relative;
   height: 100%;
@@ -33,7 +34,8 @@
       padding: 10px 70px;
       font-size: 2rem;
       background: transparent;
-      color: var(--yellow-theme-main-color);
+      // color: var(--yellow-theme-main-color);
+      color: rgb(225, 166, 88);
       border: 1.5px solid var(--yellow-theme-main-color);
       border-radius: 4px;
       font-weight: 500;
