@@ -11,7 +11,7 @@ const Home = () => {
   const navigate = useNavigate();
 
   const handleNavigateToContactMePage = () => {
-    navigate("/contact");
+    navigate("/about");
   };
 
   return (
@@ -41,7 +41,7 @@ const Home = () => {
         }}
       >
         <div className="home__contact-me">
-          <button onClick={handleNavigateToContactMePage}>Hire Me</button>
+          <button onClick={handleNavigateToContactMePage}>Know About Me</button>
         </div>
       </Animate>
     </section>
