@@ -29,6 +29,20 @@ export const data = {
         description:
           "Developed a health check dashboard using ReactJs and Django for monitoring services and servers in the Cloud environment. Containerized the application and deployed it on Cloud Run, ensuring scalability and accessibility which will save 95% of the manual efforts. Integrated Enterprise Azure AD+Okta+SSO to react application for handling authentication.",
       },
+      {
+        title: "Analyst I Cloud Engineering at DXC Technology",
+        client:"Ttec",
+        subTitle: "Data Engineer Client:Ttec",
+        description:
+          "Data Engineer Data Security Scripting: Developed a Python script for scanning and identifying Personally Identifiable Information (PII) columns within a BigQuery dataset.Automated the seamless transfer of scan results to a designated target dataset, contributing to enhanced data security measures. ",
+      },
+      {
+        title: "Analyst I Cloud Engineering at DXC Technology",
+        client:"Toyota",
+        subTitle: "Databricks Admin Client:Toyota",
+        description:
+          "Managed and resolved service requests, incidents, and implemented change requests to ensure seamless operation across Databricks and cloud services. Developed automation solutions to streamline health checks for cloud services, Databricks, and on-premises servers, improving efficiency and reducing manual workload. Designed and implemented an automation solution for an issue of multiple s3 objects deletions.",
+      },
     ],
     education: [
       {
