@@ -45,9 +45,9 @@ const Navbar = () => {
           <Link to={"/"} className="navbar__container__logo">
             <img alt="dummy data" className="venkat-img" width={70} src={Venkat} />
           </Link>
-          <div className="go-to-aws-btn-div">
+          {/* <div className="go-to-aws-btn-div">
             <a href="https://evwp74kwb4.ap-south-1.awsapprunner.com/" className="go-to-aws-btn-link">Go to AWS</a>
-          </div>
+          </div> */}
           <div className="cloud-env">
             <img alt="dummy data" className="gcp-icon" width={50} height={40} src={GcpIcon} />
             <p className="cloud-env-name">I'm from Gcp Env</p>
