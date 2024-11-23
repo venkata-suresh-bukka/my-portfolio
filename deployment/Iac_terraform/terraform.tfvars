@@ -14,7 +14,7 @@ subnet_metadata      = "INCLUDE_ALL_METADATA"
 
 #Firewall:
 firewall          = ["gke-cluster-uscentral1-01"]
-source_ranges     = ["0.0.0.0/0"]
+source_ranges = ["10.0.0.0/24"]
 protocol          = "tcp"
 ports             = ["22","443","3000","80"]
 firewall_metadata = "INCLUDE_ALL_METADATA"
