@@ -62,3 +62,4 @@ d/eployment/Iac_terraform/.terraform.lock.hcl
 /deployment/Iac_terraform/.DS_Store
 /deployment/Iac_terraform/Thumbs.db
 /deployment/Iac_terraform/.terraform
+/deployment/Iac_terraform/lateral-berm.json
