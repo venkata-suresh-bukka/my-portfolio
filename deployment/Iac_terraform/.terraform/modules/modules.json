@@ -1,1 +1,0 @@
-{"Modules":[{"Key":"","Source":"","Dir":"."},{"Key":"cluster","Source":"./modules/gke/cluster","Dir":"modules/gke/cluster"},{"Key":"custom-network","Source":"./modules/network","Dir":"modules/network"},{"Key":"node-pool","Source":"./modules/gke/node-pool","Dir":"modules/gke/node-pool"}]}
