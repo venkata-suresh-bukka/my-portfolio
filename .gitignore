@@ -22,40 +22,42 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-# Local .terraform directories
-**/.terraform/*
+# Ignore all Terraform files in the deployment/Iac_terraform directory
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+deployment/Iac_terraform/.terraform/*
+deployment/Iac_terraform/*.tfstate
+deployment/Iac_terraform/*.tfstate.*
+deployment/Iac_terraform/*.tfvars
+deployment/Iac_terraform/*.tfvars.json
+deployment/Iac_terraform/*.tfplan
+deployment/Iac_terraform/*.lock.hcl
+deployment/Iac_terraform/crash.log
 
-# Crash log files
-crash.log
-crash.*.log
+# Key files (to avoid committing sensitive data)
+deployment/Iac_terraform/key.json
+deployment/Iac_terraform/keys.json
+deployment/Iac_terraform/*.key
+deployment/Iac_terraform/*.crt
+deployment/Iac_terraform/*.pem
+deployment/Iac_terraform/*.json
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
-*.tfvars
-*.tfvars.json
+# Override files
+deployment/Iac_terraform/override.tf
+deployment/Iac_terraform/override.tf.json
+deployment/Iac_terraform/*_override.tf
+deployment/Iac_terraform/*_override.tf.json
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# Terraform provider schema lock file
+deployment/Iac_terraform/.terraform.lock.hcl
 
-# Ignore transient lock info files created by terraform apply
-.terraform.tfstate.lock.info
+# Ignore any backup or temporary files in the directory
+deployment/Iac_terraform/*.bak
+deployment/Iac_terraform/*.tmp
+deployment/Iac_terraform/*.log
+deployment/Iac_terraform/*.old
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
-
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
-
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
+# Custom files specific to a setup that shouldn't be committed
+deployment/Iac_terraform/*.swp
+deployment/Iac_terraform/*.bak
+deployment/Iac_terraform/.DS_Store
+deployment/Iac_terraform/Thumbs.db
