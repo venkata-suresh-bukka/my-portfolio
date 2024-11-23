@@ -76,8 +76,3 @@ variable "target_tags" {
   type = list(string)
   description = "Target tags"
 }
-
-# variable "target_service_accounts" {
-#   type = string
-#   description = "Target service accounts"
-# }

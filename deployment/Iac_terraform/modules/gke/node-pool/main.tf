@@ -4,7 +4,6 @@ resource "google_container_node_pool" "node_pool" {
   name           = var.node_pool
   cluster        = var.cluster
   location       = var.location
-  # node_locations = var.node_locations
 
   initial_node_count = var.initial_node_count
 

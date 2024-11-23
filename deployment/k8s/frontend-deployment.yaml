@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: frontend
-        image: us-central1-docker.pkg.dev/ms-gcp-ser-sandbox/gcp-easy-dashboard/frontend:v1
+        image: us-central1-docker.pkg.dev/lateral-berm-440713-p6/my-portfolio/gcp-portfolio:v1
         ports:
         - containerPort: 3000
       imagePullSecrets:

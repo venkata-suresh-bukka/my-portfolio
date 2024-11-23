@@ -1,7 +1,3 @@
-# variable "credentials" {
-#   type        = string
-#   description = "Credential Json file"
-# }
 
 variable "project_id" {
   type        = string
@@ -88,11 +84,6 @@ variable "target_tags" {
   description = "Target tags"
 }
 
-# variable "target_service_accounts" {
-#   type = string
-#   description = "Target service accounts"
-# }
-
 #Cluster.........................................................................................
 variable "cluster_name" {
   type        = string
@@ -116,16 +107,6 @@ variable "vertical_pod_autoscaling" {
 
 }
 
-# variable "cluster_secondary_range_name" {
-#   type        = string
-#   description = "The name of the existing secondary range in the cluster's subnetwork to use for pod IP addresses."
-
-# }
-
-# variable "services_secondary_range_name" {
-#   type        = string
-#   description = "The name of the existing secondary range in the cluster's subnetwork to use for cluster IP's"
-# }
 
 variable "release_channel" {
   type        = string
@@ -157,23 +138,6 @@ variable "enable_private_nodes" {
   type        = bool
   description = "Enables the private cluster feature, creating a private endpoint on the cluster."
 }
-
-# variable "master_ipv4_cidr_block" {
-#   type        = string
-#   description = "The IP range in CIDR notation to use for the hosted master network."
-# }
-
-# variable "pubsub_notify" {
-#   type        = bool
-#   description = "Whether or not the notification config is enabled"
-
-# }
-
-# variable "cluster_topic" {
-#   type        = string
-#   description = "The pubsub topic to push upgrade notifications to. Must be in the same project as the cluster. Must be in the format: projects/{project}/topics/{topic}."
-
-# }
 
 variable "logging_service" {
   type        = string
@@ -224,11 +188,6 @@ variable "node_pool" {
 
 }
 
-# variable "node_locations" {
-#   type        = list(string)
-#   description = "node location in accordance with cluster location"
-# }
-
 variable "initial_node_count" {
   type        = number
   description = "number of nodes to be created initially"
@@ -264,22 +223,13 @@ variable "node_machine_type" {
   description = "machine type of the nodes"
 
 }
-# variable "node_machine_type-1" {
-#   type        = string
-#   description = "machine type of the nodes"
-
-# }
 
 variable "node_image_type" {
   type        = string
   description = "image to be used for the nodes"
 
 }
-# variable "node_image_type-1" {
-#   type        = string
-#   description = "image to be used for the nodes"
 
-# }
 variable "preemptible" {
   type        = bool
   description = "A boolean that represents whether or not the underlying node VMs are preemptible."
@@ -341,13 +291,5 @@ variable "max_unavailable" {
   description = "The maximum number of nodes that can be simultaneously unavailable during the upgrade process."
 
 }
-
-
-#Pub Sub Topic......................................................................
-# variable "pubsub_topic" {
-#   type        = string
-#   description = "name of the pubsub topic"
-
-# }
 
 

@@ -21,11 +21,6 @@ variable "location" {
   
 }
 
-# variable "node_locations" {
-#   type        = list(string)
-#   description = "node location in accordance with cluster location"
-# }
-
 variable "initial_node_count" {
   type        = number
   description = "number of nodes to be created initially"

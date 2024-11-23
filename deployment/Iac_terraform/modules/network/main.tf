@@ -38,6 +38,4 @@ resource "google_compute_firewall" "firewall" {
   }
   source_tags = var.source_tags
   target_tags = var.target_tags
-
-  # target_service_accounts = var.target_service_accounts
 }

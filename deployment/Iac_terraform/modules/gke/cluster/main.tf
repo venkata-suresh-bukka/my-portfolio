@@ -5,7 +5,6 @@ resource "google_container_cluster" "cluster" {
   network        = var.network
   subnetwork     = var.subnetwork
   location       = var.location
-  # node_locations = var.node_locations
 
   remove_default_node_pool = var.remove_default_node_pool
   initial_node_count       = 1
@@ -14,10 +13,6 @@ resource "google_container_cluster" "cluster" {
     enabled = var.vertical_pod_autoscaling
   }
 
-  # ip_allocation_policy {
-  #   cluster_secondary_range_name  = var.cluster_secondary_range_name
-  #   services_secondary_range_name = var.services_secondary_range_name
-  # }
 
   release_channel {
     channel = var.release_channel
@@ -34,7 +29,6 @@ resource "google_container_cluster" "cluster" {
   private_cluster_config {
     enable_private_endpoint = var.enable_private_endpoint
     enable_private_nodes    = var.enable_private_nodes
-    #master_ipv4_cidr_block = var.master_ipv4_cidr_block
   }
 
   # notification_config {

@@ -24,12 +24,6 @@ variable "location" {
   description = "location of the cluster whether regional or zonal"
 }
 
-# variable "node_locations" {
-#   type = list(string)
-#   description = "zone of the node pool deployment"
-  
-# }
-
 variable "remove_default_node_pool" {
   type        = bool
   description = "if true, default node pool will be deleted."
@@ -42,16 +36,6 @@ variable "vertical_pod_autoscaling" {
   
 }
 
-# variable "cluster_secondary_range_name" {
-#   type        = string
-#   description = "The name of the existing secondary range in the cluster's subnetwork to use for pod IP addresses."
-
-# }
-
-# variable "services_secondary_range_name" {
-#   type        = string
-#   description = "The name of the existing secondary range in the cluster's subnetwork to use for cluster IP's"
-# }
 
 variable "release_channel" {
   type        = string
@@ -88,23 +72,6 @@ variable "enable_private_nodes" {
   type        = bool
   description = "Enables the private cluster feature, creating a private endpoint on the cluster."
 }
-
-# variable "master_ipv4_cidr_block" {
-#   type        = string
-#   description = "The IP range in CIDR notation to use for the hosted master network."
-# }
-
-# variable "pubsub_notify" {
-#   type        = bool
-#   description = "Whether or not the notification config is enabled"
-
-# }
-
-# variable "cluster_topic" {
-#   type        = string
-#   description = "The pubsub topic to push upgrade notifications to. Must be in the same project as the cluster. Must be in the format: projects/{project}/topics/{topic}."
-
-# }
 
 variable "logging_service" {
   type        = string

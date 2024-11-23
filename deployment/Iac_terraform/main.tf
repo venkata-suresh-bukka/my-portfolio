@@ -16,40 +16,24 @@ module "custom-network" {
   firewall_metadata       = var.firewall_metadata
   source_tags             = var.source_tags
   target_tags             = var.target_tags
-  # target_service_accounts = var.target_service_accounts
 }
-
-#Module_Pubsub
-# module "notify" {
-#   source       = "./modules/pubsub"
-#   project_id   = var.project_id
-#   pubsub_topic = var.pubsub_topic
-
-# }
 
 #Module_Cluster
 module "cluster" {
   source = "./modules/gke/cluster"
-  # depends_on = [
-  #   module.notify, module.custom-network
-  # ]
   project_id   = var.project_id
   cluster_name = var.cluster_name
   network      = module.custom-network.network
   subnetwork   = module.custom-network.subnet
   location     = var.location
-  # node_locations                = var.node_locations
   remove_default_node_pool = var.remove_default_node_pool
   vertical_pod_autoscaling = var.vertical_pod_autoscaling
-  # cluster_secondary_range_name  = var.cluster_secondary_range_name
-  # services_secondary_range_name = var.services_secondary_range_name
   release_channel             = var.release_channel
   enable_binary_authorization = var.enable_binary_authorization
   enable_shielded_nodes       = var.enable_shielded_nodes
   enable_intranode_visibility = var.enable_intranode_visibility
   enable_private_endpoint     = var.enable_private_endpoint
   enable_private_nodes        = var.enable_private_nodes
-  # pubsub_notify               = var.pubsub_notify
   logging_service             = var.logging_service
   monitoring_service          = var.monitoring_service
   maintenance_start_time      = var.maintenance_start_time
@@ -69,7 +53,6 @@ module "node-pool" {
   node_pool  = var.node_pool
   location   = module.cluster.cluster-location
   cluster    = module.cluster.cluster
-  # node_locations              = var.node_locations
   initial_node_count          = var.initial_node_count
   min_node_count              = var.min_node_count
   max_node_count              = var.max_node_count
