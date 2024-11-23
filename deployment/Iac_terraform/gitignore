@@ -1,0 +1,52 @@
+# Local .terraform directories
+**/.terraform/*
+
+# Terraform state files
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+
+# Terraform lock files
+*.lock.hcl
+*.lock.hcl.*
+
+# Terraform crash log files
+crash.log
+
+# Terraform variable files (optional, if not managed in Git)
+*.tfvars
+*.tfvars.json
+
+# Key files (to avoid committing sensitive data)
+key.json
+keys.json
+*.key
+*.crt
+*.pem
+*.json
+
+# Override files (locally used overrides for Terraform configurations)
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Ignore generated provider schema files
+.terraform.lock.hcl
+
+# Ignore custom files specific to a setup
+*.bak
+*.tmp
+*.log
+*.old
+
+# Negated patterns (if any specific files should not be ignored)
+# !example_override.tf
+
+# Other potential backup or system files
+*.swp
+*.bak
+.DS_Store
+Thumbs.db

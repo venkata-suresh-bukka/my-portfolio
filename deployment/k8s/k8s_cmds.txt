@@ -1,0 +1,17 @@
+kubectl create secret docker-registry regcred \
+  --docker-server=us-central1-docker.pkg.dev \
+  --docker-username=_json_key \
+  --docker-password="$(cat ms-gcp-g-i-prof-ser-sandbox-000dd0576ca0.json)" 
+
+kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/main/deploy/static/provider/cloud/deploy.yaml
+
+
+kubectl create secret generic regcred \
+    --from-file=.dockerconfigjson=config.json \
+    --type=kubernetes.io/dockerconfigjson
+  
+kubectl get events -n default
+
+
+cat ms-gcp-g-i-prof-ser-sandbox-000dd0576ca0.json | docker login -u _json_key --password-stdin \
+https://us-central1-docker.pkg.dev
