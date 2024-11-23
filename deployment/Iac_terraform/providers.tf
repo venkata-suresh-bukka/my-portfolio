@@ -7,7 +7,7 @@ terraform {
   }
 
   backend "gcs" {
-    bucket  = " gke-task-backend-tf"
+    bucket  = "gke-task-backend-tf"
     prefix  = "terraform-backend-state-files/"   
   }
 }
