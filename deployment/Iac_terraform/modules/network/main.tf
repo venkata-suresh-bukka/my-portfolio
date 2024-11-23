@@ -1,4 +1,3 @@
-#VPC Creation:
 #Creating VPC network:
 resource "google_compute_network" "vpc-network" {
   count                           = length(var.vpc)

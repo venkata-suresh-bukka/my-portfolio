@@ -52,7 +52,7 @@ node_image_type = "UBUNTU_CONTAINERD"
 preemptible     = false
 disk_size_gb    = "30"
 disk_type       = "pd-standard"
-service_account = "gke-task@lateral-berm-440713-p6.iam.gserviceaccount.com" //..............To be Replaced
+service_account = "gke-task@lateral-berm-440713-p6.iam.gserviceaccount.com" //..............replace with actual account name
 labels = {
   "mylabel" = "gkedr"
 }

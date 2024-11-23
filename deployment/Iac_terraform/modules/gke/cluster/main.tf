@@ -31,13 +31,7 @@ resource "google_container_cluster" "cluster" {
     enable_private_nodes    = var.enable_private_nodes
   }
 
-  # notification_config {
-  #   pubsub {
-  #     enabled = var.pubsub_notify
-  #     topic   = var.cluster_topic
-  #   }
-  # }
-
+ 
   logging_service    = var.logging_service
   monitoring_service = var.monitoring_service
 
