@@ -1,4 +1,5 @@
 ### `Please refer gke_usecase_test.docx file for detailed assignment steps`
+### `Due to time constraint and my exteneded on call support for my existing client I've used service account with elivated access but given enough time I could do it as needed.`
 # Use Case:
 
 Build and Deploy a react application in GKE, configure Prometheus and Grafana.
