@@ -1,0 +1,132 @@
+.navbar{
+    background-color: #0f2e69;
+    height: 84px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+
+    &__container{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        height: inherit;
+        padding: 0px 20px;
+        flex: 1;
+        &__logo{
+            color: var(--yellow-theme-main-color);
+            cursor: pointer;
+        }
+
+        &__menu{
+            display: flex;
+            list-style: none;
+            text-align: center;
+
+            &__item{
+                line-height: 40px;
+                margin-right: 1.5rem;
+                font-size: 1.6rem;
+
+                &::after{
+                    content: '';
+                    display: block;
+                    height: 3px;
+                    width: 0;
+                    background: transparent;
+                    transition: all 0.5s ease;
+                }
+
+                &:hover::after{
+                    width: 100%;
+                    background: var(--yellow-theme-main-color);
+                }
+
+                &__links{
+                    color: #f1f2f4;
+                    text-decoration: none;
+                    font-family: Arial, Helvetica, sans-serif;
+                    padding: 0.5rem;
+                }
+            }
+        }
+    }
+}
+
+.nav-icon{
+    display: none;
+}
+
+@media only screen and (max-width : 768px){
+    .navbar__container__menu{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        position: absolute;
+        top: 80px;
+        left: -110%;
+        opacity: 1;
+        transition: all 0.5s ease;
+
+        &.active{
+            background: #181818;
+            left: 0px;
+            opacity: 1;
+        }
+
+        &__item{
+            border-bottom: 1px solid #282828;
+            margin: 0px;
+            padding: 20px 0px; 
+        }
+    }
+
+    .nav-icon{
+        display: block;
+        cursor: pointer;
+        color: var(--yellow-theme-main-color);
+        padding-right: 20px;
+    }
+}
+.navbar__container__logo{
+    background-color: rgb(153, 187, 218);
+    border-radius: 50px;
+}
+.venkat-img{
+    margin-left: 12px;
+    height: 70px;
+    margin-bottom: 5px;
+}
+
+.cloud-env{
+    color: white;
+    margin-left: 12vw;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+.cloud-env-name{
+    margin-top: 15px;
+    margin-left: 10px;
+}
+.gcp-icon{
+    height: 50px;
+}
+.go-to-aws-btn-div{
+    height: 30px;
+    width: 80px;
+    margin-left: 10px;
+    text-decoration: none;
+    padding: 10px;
+    padding-left: 14px;
+    background-color: rgb(243, 171, 95);
+    border-radius: 10px;
+  }
+.go-to-aws-btn-link{
+    text-decoration: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: rgb(37, 34, 34);
+}

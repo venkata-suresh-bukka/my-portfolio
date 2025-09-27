@@ -1,0 +1,70 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.js
+/env
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Ignore all Terraform files in the deployment/Iac_terraform directory
+
+/deployment/Iac_terraform/.terraform/*
+/deployment/Iac_terraform/*.tfstate
+/deployment/Iac_terraform/*.tfstate.*
+/deployment/Iac_terraform/*.tfvars
+/deployment/Iac_terraform/*.tfvars.json
+/deployment/Iac_terraform/*.tfplan
+/deployment/Iac_terraform/*.lock.hcl
+/deployment/Iac_terraform/crash.log
+
+# Key files (to avoid committing sensitive data)
+/deployment/Iac_terraform/key.json
+/deployment/Iac_terraform/keys.json
+/deployment/Iac_terraform/*.key
+/deployment/Iac_terraform/*.crt
+/deployment/Iac_terraform/*.pem
+/deployment/Iac_terraform/*.json
+
+# Override files
+/deployment/Iac_terraform/override.tf
+/deployment/Iac_terraform/override.tf.json
+/deployment/Iac_terraform/*_override.tf
+/deployment/Iac_terraform/*_override.tf.json
+
+# Terraform provider schema lock file
+d/eployment/Iac_terraform/.terraform.lock.hcl
+
+# Ignore any backup or temporary files in the directory
+/deployment/Iac_terraform/*.bak
+/deployment/Iac_terraform/*.tmp
+/deployment/Iac_terraform/*.log
+/deployment/Iac_terraform/*.old
+
+# Custom files specific to a setup that shouldn't be committed
+/deployment/Iac_terraform/*.swp
+/deployment/Iac_terraform/*.bak
+/deployment/Iac_terraform/.DS_Store
+/deployment/Iac_terraform/Thumbs.db
+/deployment/Iac_terraform/.terraform
+/deployment/Iac_terraform/lateral-berm.json
+/deployment/Iac_terraform/terraform.tfstate
+/deployment/Iac_terraform/terraform.tfstate.backup
+/deployment/Iac_terraform/.terraform.lock.hcl
+/~WRL2076.tmp
+/~$e_usecase_test.docx
