@@ -11,7 +11,7 @@ Build and Deploy a react application in GKE, configure Prometheus and Grafana.
 2. install npm – 8.19.4
 3. Install Terraform – v1.9.8
 4. Docker
-5. gcloud CLI
+5. gcloud CLI.
    
 Login to the GCP using below command:
 
